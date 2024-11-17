@@ -19,6 +19,11 @@ int main(){
     // }
     int q = 4;
     vector<vector<int>> query = {{2,3}, {4, 6}, {1,5},{3, 6}};
+
+    for(int i=0; i<q; i++){
+        int l = query[i][0], r = query[i][1];
+        cout<<pr[r-1] - pr[l-2]<<" ";
+    }
     cout<<endl;
     return 0;
 }
