@@ -1,29 +1,19 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-const int N = 1e5 + 10;
-int arr[N];
-int freq[N];
 
 int main(){
-    int n;
+    long long n, num;
     cin>>n;
-    for(int i=0; i<n-1; i++) {
-        cin>>arr[i];
- 
+    long long sum = 0;
+    long long sum2 = (n * (n + 1)) / 2;
+    n--;
+    while(n--){
+        cin>>num;
+        sum += num;
     }
 
 
-    for(int i=0; i<n; i++) {
-        freq[arr[i]]++;
-    }
-
-
-    for(int i=1; i<=n; i++){
-        if(freq[i] == 0) {
-            cout<<i<<endl;
-            break;
-        }
-    }
+    cout<<sum2 - sum<<endl;
     return 0;
 }
