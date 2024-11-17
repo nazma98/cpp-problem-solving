@@ -3,17 +3,23 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define fast_io ios_base::sync_with_stdio(false); cin.tie(NULL);
+// #define fast_io ios_base::sync_with_stdio(false); cin.tie(NULL);
 
 int main() {
-    fast_io; // Enable fast input and output
+    // fast_io; // Enable fast input and output
     
     int t;
     cin >> t; // Input the number of test cases
     while (t--) {
-        int n;
-        cin >> n; // Example input for a single test case
-        cout << n * n << "\n"; // Example output
+        int n, k;
+        cin >> n >> k; // input for a single test case
+        if(k*k < n) {
+            if(k%2 == n%2){
+                cout<< "YES"<<"\n";
+
+            }
+        }
+    cout<< "NO"<<"\n";
     }
 
     return 0;
