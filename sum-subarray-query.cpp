@@ -14,10 +14,11 @@ int main(){
         pr[i] = pr[i-1] + ar[i];
     }
 
-    for(int i=0; i<n; i++) {
-        cout<<pr[i]<<" ";
-    }
-
+    // for(int i=0; i<n; i++) {
+    //     cout<<pr[i]<<" ";
+    // }
+    int q = 4;
+    vector<vector<int>> query = {{2,3}, {4, 6}, {1,5},{3, 6}};
     cout<<endl;
     return 0;
 }
