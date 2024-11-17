@@ -3,10 +3,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// #define fast_io ios_base::sync_with_stdio(false); cin.tie(NULL);
+#define fast_io ios_base::sync_with_stdio(false); cin.tie(NULL);
 
 int main() {
-    // fast_io; // Enable fast input and output
+    fast_io; // Enable fast input and output
     
     int t;
     cin >> t; // Input the number of test cases
@@ -16,7 +16,7 @@ int main() {
         if(k*k <= n && (k%2 == n%2)) {
             cout<< "YES"<<"\n";
         } else {
-            cout<< "No" <<"\n";
+            cout<< "NO" <<"\n";
         }
 
     }
