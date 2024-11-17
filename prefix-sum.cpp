@@ -11,14 +11,10 @@ int main(){
     {
         cin>>arr[i];
     }
-    for (int i = 0; i < n; i++)
+    prefixSum[0] = arr[0];
+    for (int i = 1; i < n; i++)
     {
-        for (int j = 0; j <= i; j++)
-        {
-        prefixSum[i] += arr[j];
-        }
-        
-
+        prefixSum[i] = prefixSum[i-1] + arr[i];
     }
 
     for (int i = 0; i < n; i++)
