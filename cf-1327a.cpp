@@ -13,13 +13,12 @@ int main() {
     while (t--) {
         int n, k;
         cin >> n >> k; // input for a single test case
-        if(k*k < n) {
-            if(k%2 == n%2){
-                cout<< "YES"<<"\n";
-
-            }
+        if(k*k < n && (k%2 == n%2)) {
+            cout<< "YES"<<"\n";
+        } else {
+            cout<< "No" <<"\n";
         }
-    cout<< "NO"<<"\n";
+
     }
 
     return 0;
