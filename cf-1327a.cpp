@@ -11,12 +11,12 @@ int main() {
     int t;
     cin >> t; // Input the number of test cases
     while (t--) {
-        int n, k;
+        long long n, k;
         cin >> n >> k; // input for a single test case
         if(k*k <= n && (k%2 == n%2)) {
-            cout<< "YES"<<"\n";
+            cout<< "YES\n";
         } else {
-            cout<< "NO" <<"\n";
+            cout<< "NO\n";
         }
 
     }
