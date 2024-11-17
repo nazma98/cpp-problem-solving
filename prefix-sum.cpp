@@ -7,6 +7,10 @@ int main(){
     int arr[n];
     int prefixSum[n];
     memset(prefixSum, 0, sizeof(prefixSum));
+        for (int i = 0; i < n; i++)
+    {
+        cin>>arr[i];
+    }
     for (int i = 0; i < n; i++)
     {
         prefixSum[i] += arr[i];
