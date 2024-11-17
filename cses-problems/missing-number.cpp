@@ -18,10 +18,6 @@ int main(){
         freq[arr[i]]++;
     }
 
-        for(int i=1 ; i<=n; i++) {
-        cout<<freq[i]<<endl;
-    
-    }
 
     for(int i=1; i<=n; i++){
         if(freq[i] == 0) {
