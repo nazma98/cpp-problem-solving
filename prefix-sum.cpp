@@ -13,7 +13,12 @@ int main(){
     }
     for (int i = 0; i < n; i++)
     {
-        prefixSum[i] += arr[i];
+        for (int j = 0; j <= i; j++)
+        {
+        prefixSum[i] += arr[j];
+        }
+        
+
     }
 
     for (int i = 0; i < n; i++)
