@@ -25,7 +25,7 @@ int main(){
 
     for(int i=1; i<=n; i++){
         if(freq[i] == 0) {
-            cout<<freq[i]<<endl;
+            cout<<i<<endl;
             break;
         }
     }
