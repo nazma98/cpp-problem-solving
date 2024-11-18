@@ -5,8 +5,10 @@ int main() {
     long long n, i;
     cin >> n;
 
-    if (n < 4) {
+    if (n > 1 && n < 4) {
         cout << "NO SOLUTION" << endl;
+    } else if(n == 1) {
+        cout<<n<<endl;
     } else {
         vector<long long> even, odd; // No pre-allocation
 
