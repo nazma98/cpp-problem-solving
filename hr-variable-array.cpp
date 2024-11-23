@@ -19,11 +19,15 @@ int main() {
             cin>>arr[i][j];
         }
     }
-    vector<vector<int>> qr(q);
+    vector<vector<int>> qr(q, vector<int>(2));
     for (int i=0; i<q; i++) {
         for(int j=0; j<2; j++) {
             cin>>qr[i][j];
         }
     }   
+
+    for(int i=0; i<q; i++) {
+        cout<<arr[qr[i][0]][qr[i][1]]<<"\n";
+    }
     return 0;
 }
