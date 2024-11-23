@@ -9,6 +9,15 @@ int main()
 
     v.insert(v.begin()+1, 5);
 
+
+    for(auto it = v.begin(); it!= v.end(); it++) {
+        cout<<*it<<" ";
+    }
+
+       cout<<"\n";
+
+    v.erase(v.begin()+2);
+
     for(auto it = v.begin(); it!= v.end(); it++) {
         cout<<*it<<" ";
     }
