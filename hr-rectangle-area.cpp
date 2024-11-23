@@ -10,7 +10,7 @@ using namespace std;
             int width;
             int height;
             
-            void displa(){
+            void display(){
                 cout<<width<<" "<<height<<"\n";
             }
  };
@@ -19,6 +19,11 @@ using namespace std;
     public:
         void read_input(){
             cin>>width>>height;
+        }
+
+        void display(){
+            int area = width * height;
+            cout<<area<<"\n";
         }
  };
 
