@@ -15,7 +15,12 @@ using namespace std;
             }
  };
 
-
+ class RectangleArea:public Rectangle{
+    public:
+        void read_input(){
+            cin>>width>>height;
+        }
+ };
 
 
 int main()
