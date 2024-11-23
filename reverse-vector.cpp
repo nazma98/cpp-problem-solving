@@ -2,8 +2,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-vector<int> reverseVector(vector<int>& v) {
-    
+void reverseVector(vector<int>& v) {
+    reverse(v.begin(), v.end());
 }
 
 int main(){
@@ -20,6 +20,11 @@ int main(){
 
     reverseVector(v);
 
+        for(int i=0; i<n; i++) {
+            cout<<v[i]<<" ";
+    }
+
+    cout<<"\n";
 
     return 0;
 }
