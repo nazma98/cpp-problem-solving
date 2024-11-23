@@ -20,7 +20,9 @@ class Isosceles : public Triangle{
 };
 
 //Write your code here.
+class Equilateral:public Isosceles{
 
+};
 
 int main(){
   
