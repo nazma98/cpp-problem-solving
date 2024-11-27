@@ -6,7 +6,12 @@ using namespace std;
 
 int main(){
     unordered_map<int, int> frequncy_map;
-    
-
+    int n;
+    cin>>n;
+    for(int i=0; i<n; i++) {
+        int num;
+        cin>>num;
+        frequncy_map[num]++;
+    }
     return 0;
 }
