@@ -13,5 +13,11 @@ int main(){
         cin>>num;
         frequncy_map[num]++;
     }
+
+    for (auto it = frequncy_map.begin(); it != frequncy_map.end(); it++)
+    {
+        cout<<"Number "<<it->first<<" frequency"<<it->second<<"\n";
+    }
+    
     return 0;
 }
