@@ -15,5 +15,13 @@ int main(){
         char ch = t[i];
         freq[ch - 'a']--;
     }
+
+    for(int i=0; i<26; i++){
+        if(freq[i]){
+            cout<<"not anagram"<<"\n";
+            return 0;
+        }
+    }
+    cout<<"anagram\n";
     return 0;
 }
