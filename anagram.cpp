@@ -11,8 +11,9 @@ int main(){
         freq[ch - 'a']++;
     }
 
-    for(int i=0; i<s.length(); i++){
-
+    for(int i=0; i<t.length(); i++){
+        char ch = t[i];
+        freq[ch - 'a']--;
     }
     return 0;
 }
