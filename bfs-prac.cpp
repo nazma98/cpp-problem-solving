@@ -32,5 +32,7 @@ int main(){
     {2}
     };
 
+    bfs(graph, 0);
+
     return 0;
 }
