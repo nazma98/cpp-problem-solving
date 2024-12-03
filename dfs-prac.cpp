@@ -1,14 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void dfsRecursive(vector<vector<int>> &graph, int node) {
-    vector<bool>visited(graph.size(), false);
+void dfsRecursive(vector<vector<int>> &graph, vector<bool>&visited, int node) {
     visited[node] = true;
     cout<<node<<" ";
     
     for(int neighbor : graph[node]) {
         if(!visited[neighbor]){
-            dfsRecursive(graph, neighbor);
+            dfsRecursive(graph, visited, neighbor);
         }
     }
 }
@@ -25,7 +24,9 @@ int main(){
     {2}
     };
 
-    dfsRecursive(graph, 0);
+    vector<bool>visited(graph.size(), false);
+
+    dfsRecursive(graph, visited, 0);
 
     return 0;
 }
