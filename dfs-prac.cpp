@@ -25,5 +25,7 @@ int main(){
     {2}
     };
 
+    dfsRecursive(graph, 0);
+
     return 0;
 }
