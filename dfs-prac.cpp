@@ -14,14 +14,13 @@ void dfsRecursive(vector<vector<int>> &graph, vector<bool>&visited, int node) {
 
 int main(){
     vector<vector<int>>graph = {
-    {0, 1, 2},
-    {1, 2},
-    {0, 3, 4},
-    {0, 5, 6},
-    {1},
-    {1},
-    {2},
-    {2}
+        {1, 2},      // Node 0 is connected to 1 and 2
+        {0, 3, 4},   // Node 1 is connected to 0, 3, and 4
+        {0, 5, 6},   // Node 2 is connected to 0, 5, and 6
+        {1},         // Node 3 is connected to 1
+        {1},         // Node 4 is connected to 1
+        {2},         // Node 5 is connected to 2
+        {2} 
     };
 
     vector<bool>visited(graph.size(), false);
