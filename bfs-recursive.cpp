@@ -11,6 +11,8 @@ int main(){
         {2}            // Neighbors of node 5
     };
 
+    bfsRecursive(graph, 0);
+
 
     return 0;
 }
