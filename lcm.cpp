@@ -10,5 +10,6 @@ int main(){
     int a, b;
     cin>>a>>b;
     int lcm = (a*b) / gcd(a, b);
+    cout<<lcm<<endl;
     return 0;
 }
