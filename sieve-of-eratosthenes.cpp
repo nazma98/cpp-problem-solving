@@ -18,5 +18,12 @@ int main(){
     cin>>num;
     vector<bool>prime(num+1, true);
     sieveOfEratosthenes(prime, num);
+    
+    for(int i=0; i<= num; i++) {
+        if(prime[i]) {
+            cout<<i<<" ";
+        }
+    }
+    cout<<endl;
     return 0;
 }
